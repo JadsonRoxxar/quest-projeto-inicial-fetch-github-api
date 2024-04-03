@@ -11,7 +11,15 @@ const screen = {
                                 }</h1>
                                 <p>${
                                     user.bio ?? "Não possui bio cadastrada 😥"
-                                }</p>
+                                }</p> <br>
+                                <hr> <br>
+                                <p>👥 Followers:${user.followers}</p>
+                                <p>👤 Following:${user.following}</p> <br>
+                                <hr> <br>
+                                <div class="eventos">
+                                    <h2>Eventos</h2>
+                                    <ul>${user.eventsUrl}</ul>
+                                <d/iv>
                             </div>
                         </div>`;
         let repositoriesItems = "";
