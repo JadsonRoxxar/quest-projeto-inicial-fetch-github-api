@@ -4,7 +4,13 @@ const user = {
     bio: "",
     userName: "",
     repositories: [],
-    eventsUrl: [],
+    forks: "",
+    stars: "",
+    watchers: "",
+    language: "",
+    events: [],
+    nameEvent: "",
+    commits: "",
     setInfo(gitHubUser) {
         this.avatarUrl = gitHubUser.avatar_url;
         this.name = gitHubUser.name;
@@ -15,9 +21,16 @@ const user = {
     },
     setRepositories(repositories) {
         this.repositories = repositories;
+        this.forks = repositories.forks;
+        this.stars = repositories.stargazers_count;
+        this.watchers = repositories.watchers;
+        this.language = repositories.language;
     },
-    setEvents(gitHubUserEvents) {
-        this.eventsUrl = gitHubUserEvents.events_url;
+
+    setEvents(events) {
+        this.events = events;
+        // this.nameEvent = event.payload.repo.name;
+        // this.commit = event.payload.commits[0].message;
     },
 };
 
