@@ -167,6 +167,20 @@ main {
     display: none;
 }
 
+.container .profile-data .events {
+    display: flex;
+    flex-direction: column;
+    background-color: #d7dbdf;
+    font-weight: bolder;
+    color: #646d7d;
+    padding: 10px;
+}
+
+.container .profile-data .events .span {
+    color: #1e1e1e;
+    font-weight: bold;
+}
+
 @media (max-width: 1280px) {
     .container {
         flex-direction: column;

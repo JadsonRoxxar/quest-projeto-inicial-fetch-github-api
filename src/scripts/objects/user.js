@@ -29,8 +29,6 @@ const user = {
 
     setEvents(events) {
         this.events = events;
-        // this.nameEvent = event.payload.repo.name;
-        // this.commit = event.payload.commits[0].message;
     },
 };
 
